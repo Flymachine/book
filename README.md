@@ -1,25 +1,27 @@
-# The Embedded Rust Book
+# The Embedded Rust Book 嵌入式Rust之书
 
-> Documentation on how to use the Rust Programming Language to develop firmware for bare metal (microcontroller) devices
+> 文档是关于如何运用Rust语言开发单片机设备固件
 
-This project is developed and maintained by the [Resources team][team].
+这个项目是由 [Resources team][team] 开发和维护的。（译者注：由Flymachine进行中文翻译）
 
-See [the issue tracker] for more details. This book is a living document, and is updated continuously.
+看 [问题汇总] 获取更多信息. 这本书是活跃项目会持续更新（译者注：本翻译依照版本：`9858872bd1b7dbba5ec27dc30d34eba00acd7ef9`）。
 
-[the issue tracker]: https://github.com/rust-embedded/book/issues
+[问题汇总]: https://github.com/rust-embedded/book/issues
 
-## Online Copies of this Book
+## 这本书（英文）在线拷贝
 
-This book is located at https://docs.rust-embedded.org/book/
+这本书的英文版本可以在此网站上看： https://docs.rust-embedded.org/book/
 
-## License
+中文版预计发布到 https://rustforce.net 上
 
-The Embedded Rust Book (this project) is distributed under the following licenses:
+## 协议
 
-* The code samples and free-standing Cargo projects contained within this book are licensed under the terms of both the [MIT License] and the [Apache License v2.0].
-* The written prose contained within this book is licensed under the terms of the Creative Commons [CC-BY-SA v4.0] license.
+《嵌入式Rust之书》（译者注：原项目及此项目）遵循以下协议：
 
-Copies of the licenses used by this project may also be found here:
+* 包含在这本书里的代码样例和独立`Cargo`项目同时遵循 [MIT License] 和 [Apache License v2.0]。
+* 包含在这本书里的文章遵循*知识共享*组织（Creative Commons）的 [CC-BY-SA v4.0] 协议.
+
+这个项目的协议拷贝同样可以在这里找到:
 
 * [MIT License Hosted]
 * [Apache License v2.0 Hosted]
@@ -32,15 +34,14 @@ Copies of the licenses used by this project may also be found here:
 [Apache License v2.0 Hosted]: http://www.apache.org/licenses/LICENSE-2.0
 [CC-BY-SA v4.0 Hosted]: https://creativecommons.org/licenses/by-sa/4.0/legalcode
 
-### Contribution
+### 贡献
 
-Unless you explicitly state otherwise, any contribution intentionally submitted for inclusion in the work by you, as defined in the Apache-2.0 license, shall be licensed as above, without any additional terms or conditions.
+除非您明确说明，否则，你的任何包含在有效提交中的贡献（和Apache-2.0许可中定义的一样）应按上述许可，不附加任何附加条款或条件
 
-## Code of Conduct
+## 代码组织
 
-Contribution to this crate is organized under the terms of the [Rust Code of
-Conduct][CoC], the maintainer of this crate, the [Resources team][team], promises
-to intervene to uphold that code of conduct.
+这个项目的贡献依照 [Rust Code of
+Conduct][CoC] 条款组织, 这个项目的维护者, [Resources team][team], 承诺为维护行为准则而进行干预。
 
 [CoC]: CODE_OF_CONDUCT.md
 [team]: https://github.com/rust-embedded/wg#the-resources-team
