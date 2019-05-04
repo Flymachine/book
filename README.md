@@ -25,6 +25,7 @@
 这本书的英文版本可以在此网站上看： https://docs.rust-embedded.org/book/
 
 中文版已发布到 https://rustforce.net 嵌入式板块上，[Introduction 导言]。
+
 [Introduction 导言]: https://rustforce.net/article?id=8da8d5bf-f2af-4c9a-b3f3-567c19488871
 
 ## 协议
