@@ -33,7 +33,7 @@
 
 下面的文字解释了我们使用这些工具的原因。安装说明可以在下一页（译者注：下一节[Installation 安装]）找到。
 
-## `cargo-generate` OR `git`
+## `cargo-generate` 或 `git`
 
 裸机程序是禁用标准库（`no_std`）的Rust程序，需要对链接过程进行一些调整才能使程序的内存布局正确。这需要一些额外的文件（如链接器脚本）和设置（如链接器标志）。我们已经在模板中打包了这些，你只需要填写缺少的信息（例如项目名称和目标硬件的特征）。
 
@@ -64,57 +64,21 @@ OpenOCD还执行其他重要工作，作为其STM32F3DISCOVERY开发板上基于
 * 它知道如何与ARM CoreSight调试外设使用的内存映射寄存器进行交互。正是这些CoreSight寄存器允许：
   * 断点/观察点（Breakpoint/Watchpoint）操作
   * 读写CPU寄存器
-  * 检测CPU何时因调试事件而停止
+  * 检测CPU何时因调试事件而暂停
   * 遇到调试事件后继续执行CPU
   * 等等。
 * 它同样知道如何擦除和写入单片机的FLASH
 
->## 中文版目录
+> 上一节 
+> 1.2. [no_std 禁用标准库]
 >
->1. [Introduction 导言]
->    - 1.1. [Hardware 硬件]
->    - 1.2. [no_std 禁用标准库]
->    - 1.3. [Tooling 工具]
->    - 1.4. [Installation 安装]
->        - 1.4.1. [Linux]
->        - 1.4.2. [MacOS]
->        - 1.4.3. [Windows]
->        - 1.4.4. [Verify Installation 验证安装]
->2. Getting started 新手入门
->    - 2.1. QEMU Qemu仿真软件
->    - 2.2. Hardware 硬件
->    - 2.3. Memory-mapped Registers 内存映射寄存器
->    - 2.4. Semihosting 半主机
->    - 2.5. Panicking 恐慌
->    - 2.6. Exceptions 异常
->    - 2.7. Interrupts 中断
->    - 2.8. IO 输入/输出
->3. Peripherals 外围设备
->    - 3.1. A first attempt in Rust 用Rust的第一个尝试
->    - 3.2. The Borrow Checker Borrow检查器
->    - 3.3. Singletons
->4. Static Guarantees 静态保证
->    - 4.1. Typestate Programming 类型状态编程
->    - 4.2. Peripherals as State Machines 作为状态机的外围设备
->    - 4.3. Design Contracts 设计契约
->    - 4.4. Zero Cost Abstractions 0成本抽象
->5. Portability 轻量
->6. Concurrency 并发
->7. Collections 集合
->8. Tips for embedded C developers 为嵌入式C程序员准备的提示
->9. Interoperability 互操作
->    - 9.1. A little C with your Rust 在你的Rust项目中使用一点C
->    - 9.2. A little Rust with your C 在你的C项目中使用一点Rust
->10. Unsorted topics 未分类主题
->     - 10.1. Optimizations: The speed size tradeoff 优化：速度和体积的权衡
+> 目录 
+> [Index 目录]
+>
+> 下一节 
+> 1.4. [Installation 安装]
 >
 
-[Introduction 导言]: https://rustforce.net/article?id=8da8d5bf-f2af-4c9a-b3f3-567c19488871
-[Hardware 硬件]: https://rustforce.net/article?id=e86bd376-948b-4e9e-a359-c419a7206ca1
+[Index 目录]: https://rustforce.net/article?id=943af2e7-0f1f-40fd-8864-4bb4d2676b4d
 [no_std 禁用标准库]: https://rustforce.net/article?id=5697689c-b8f1-4144-88fa-6f9f45ed7f83
-[Tooling 工具]: https://rustforce.net/article?id=07057df5-c646-46ee-bbf6-5ce3c7a131b7
 [Installation 安装]: https://rustforce.net/article?id=93e6942e-1c7c-477e-b7da-3ff1e18e4402
-[Linux]: https://rustforce.net/article?id=2342532b-c85b-41b3-ad38-62865825bb9b
-[MacOS]: https://rustforce.net/article?id=0e8628b4-8d92-40eb-89cd-71ae5cf373ec
-[Windows]: https://rustforce.net/article?id=ac93073d-cff7-4c96-bbaf-047eceb4f13d
-[Verify Installation 验证安装]: https://rustforce.net/article?id=35d99a70-bfd0-4169-b664-de44129df484
